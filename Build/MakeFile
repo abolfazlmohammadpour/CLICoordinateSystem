@@ -1,0 +1,9 @@
+.DEFAULT_GOAL := CompileAndRun
+
+Compile:
+	@ gcc-12 ./Source/main.c -std=c11  -o ./Output/main.out
+Run:
+	@ ./Output/main.out
+CompileAndRun:
+	@ gcc-12 ./Source/main.c -std=c11  -o ./Output/main.out
+	@ ./Output/main.out
